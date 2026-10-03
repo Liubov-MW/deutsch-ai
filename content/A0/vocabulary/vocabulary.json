@@ -1,0 +1,23 @@
+[
+    {
+        "word": "Haus",
+        "article": "das",
+        "plural": "Häuser",
+        "translation_uk": "будинок",
+        "level": "A0"
+    },
+    {
+        "word": "Buch",
+        "article": "das",
+        "plural": "Bücher",
+        "translation_uk": "книга",
+        "level": "A0"
+    },
+    {
+        "word": "Frau",
+        "article": "die",
+        "plural": "Frauen",
+        "translation_uk": "жінка",
+        "level": "A0"
+    }
+]
