@@ -8,7 +8,7 @@ word_input = input("Gib ein deutsches Wort ein: ")
 found = False
 
 for item in vocabulary:
-    if item["word"] == word_input:
+    if item["word"].lower() == word_input.lower():
         print("Wort:", item["word"])
         print("Artikel:", item["article"])
         print("Plural:", item["plural"])

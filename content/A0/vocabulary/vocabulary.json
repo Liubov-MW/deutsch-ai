@@ -20,4 +20,18 @@
         "translation_uk": "жінка",
         "level": "A0"
     }
+    {
+        "word": "Mann",
+        "article": "der",
+        "plural": "Männer",
+        "translation_uk": "чоловік",
+        "level": "A0"
+    } 
+    {
+        "word": "Kind",
+        "article": "das",
+        "plural": "Kinder",
+        "translation_uk": "дитина",
+        "level": "A0"
+    }
 ]
