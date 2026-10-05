@@ -1,4 +1,5 @@
-# Aufgabe 1
+# Aufgabe 1 
+# return
 def check_age(age):
     if age >=18:
         return "Volljährig"
