@@ -1,18 +1,14 @@
 import json
+from services.vocabulary_service import find_word
+from services.training_service import check_answer
+from services.progress_service import calculate_score
 
 # завантажуємо всe з vocabular
 with open("content/A0/vocabulary/vocabulary.json", "r", encoding="utf-8") as file:
     vocabulary = json.load(file)
 
-# нова функція
-def find_word(word):
-    for item in vocabulary:
-        if item["word"].lower() == word.lower():
-            return item
-    return None
-
 word_input = input("Gib ein deutsches Wort ein: ")
-result = find_word(word_input)
+result = find_word(vocabulary, word_input)
 if result != None:
      print("Wort:", result["word"])
      print("Artikel:", result["article"])
@@ -21,3 +17,10 @@ if result != None:
      print("Niveau:", result["level"])
 else:
      print("Wort nicht gefunden.")
+print("Training Test:")
+
+result = check_answer("Haus", "haus")
+print("Antwort richtig:", result)
+
+percentage = calculate_score(3,1)
+print("Ergebnis:", percentage, "%")
