@@ -13,3 +13,14 @@ def test_search_word():
 
     assert len(results) == 1
     assert results[0]["word"] == "Haus"
+
+
+def test_search_word_not_found():
+    vocabulary = [
+        {"word": "Haus", "translation": "будинок"},
+        {"word": "Baum", "translation": "дерево"}
+    ]
+
+    results = search_words(vocabulary, "Auto")
+
+    assert results == []
