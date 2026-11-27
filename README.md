@@ -29,7 +29,7 @@ Deutsch AI is a language learning application developed with Python.
 
 Run the vocabulary search program from the project root directory:
 ```bash 
-python backend/app/practice_day16.py
+python backend/app/practice_day17.py
 ```
 
 
@@ -45,6 +45,24 @@ python backend/app/practice_day16.py
 - Deutsch im Beruf
 - Bewerbung
 - Fortschritt
-## Aktueller stand
-Version 0.1
-Vorbereitung/Prototyp
+
+## Development Progress
+
+### Day 17 — Vocabulary Search and Testing
+
+- Improved partial-word vocabulary search.
+- Added case-insensitive search using lower().
+- Added whitespace handling using strip().
+- Added validation for empty search queries.
+- Created five automated tests using assert.
+- All five tests passed successfully.
+
+### Next Steps
+
+- Expand automated testing.
+- Improve vocabulary management.
+- Continue developing the Python backend.
+
+## Current Development Status
+
+Version 0.1 — Prototype in active development.
